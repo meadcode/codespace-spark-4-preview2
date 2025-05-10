@@ -1,0 +1,15 @@
+{
+    "name": "Spark 4.0 Dev",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "remoteUser": "root",
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "python.pythonPath": "/usr/bin/python3"
+        }
+      }
+    },
+    "postCreateCommand": "bash -c './scripts/install-dev-tools.sh'"
+}
